@@ -43,7 +43,7 @@ zenml integration install bentoml
 The project can only be executed with a ZenML stack that has an MLflow experiment tracker and BentoML model deployer as a component. Configuring a new stack with the two components are as follows:
 
 ```
-zenml experiment-tracker register mlflow_tracker --flavor=mlflow
+zenml experiment-tracker register mlflow_tracker_mlops --flavor=mlflow
 zenml model-deployer register bentoml_deployer --flavor=bentoml
 zenml stack register local_bentoml_stack \
   -a default \
